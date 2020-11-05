@@ -20,15 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa5a3e8d-059a-462a-94ea-73893ab73ff2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/user/user-main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gaiolithos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gaiolithos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/dashboard/user/user-main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard/user/user-main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/user/user-main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/user/user-main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/user/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/user/user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partial/scriptLink.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partial/scriptLink.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +168,21 @@
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-buttons" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-editor" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-fractal" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-html" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/league/fractal" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jpBCYC1YaBlmQ3y0duTjLZchvo" />
@@ -212,11 +236,22 @@
       <workItem from="1604521922212" duration="8790000" />
       <workItem from="1604531246912" duration="9435000" />
       <workItem from="1604566696180" duration="4876000" />
+      <workItem from="1604575594330" duration="887000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -239,6 +274,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604571334010" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1604572364443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604572364443" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604534645819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -263,6 +302,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="682" y="243" key="NewPhpClassDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604529110154" />
+    <state x="743" y="222" key="RollbackChangesDialog" timestamp="1604572365851">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="222" key="RollbackChangesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604572365851" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1604567353484">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -275,18 +318,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="539" y="64" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604533249861" />
-    <state x="275" y="128" width="1410" height="659" key="find.popup" timestamp="1604537387893">
+    <state x="275" y="128" width="1410" height="659" key="find.popup" timestamp="1604574492806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="275" y="128" width="1410" height="659" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604537387893" />
+    <state x="275" y="128" width="1410" height="659" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604574492806" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1604537183697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" width="672" height="677" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604537183697" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604571553108">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604576261541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604571553108" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604576261541" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

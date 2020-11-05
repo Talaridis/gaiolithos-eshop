@@ -27,6 +27,7 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard
 
 
 Route::get("/users",[UserController::class,"index"])->name("user.user.datatable"); //datatable User Main
-Route::get("/test",[UserController::class,"test"])->name("test.user.datatable"); //datatable User Main
+Route::get("/user-main/datatable",[UserController::class,"initDatatableUser"])->name("test.user.datatable"); //datatable User Main
+
 Route::get("/create",[UserController::class,"create"])->name("user.create");
 Route::post("/user/store",[UserController::class,"store"])->name("user.store");

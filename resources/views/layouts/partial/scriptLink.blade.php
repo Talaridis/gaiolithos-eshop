@@ -6,6 +6,10 @@
 
 
 <!-- bundle -->
+
+
 <script src="/assets/js/vendor.min.js"></script>
+
 <script src="{{ mix('js/app.js') }}"></script>
+
 @yield("script")

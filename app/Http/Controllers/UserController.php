@@ -23,9 +23,16 @@ class UserController extends Controller {
 
     }
 
-    public function test()
+    public function initDatatableUser()
     {
-        return Datatables::of(User::query())->make(true);
+        return Datatables::of(User::query())
+            ->editColumn('created_at', function ($data){
+                return $data->created_at->diffForHumans();
+            })
+            ->editColumn('updated_at', function ($data){
+                return $data->updated_at->diffForHumans();
+            })
+            ->make(true);
     }
 
     public function create()

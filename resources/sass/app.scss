@@ -1,6 +1,11 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+
+//sweetalert2
+@import "~sweetalert2/src/sweetalert2";
+
+
 //theme
 @import "../theme/scss/app-modern-dark";
 @import "../theme/scss/custom/plugins/icons/materialdesignicons";
@@ -17,3 +22,5 @@
 // DataTables
 @import "~datatables.net-bs4/css/dataTables.bootstrap4.css";
 @import "~datatables.net-buttons-bs4/css/buttons.bootstrap4.css";
+
+

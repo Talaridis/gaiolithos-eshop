@@ -1,5 +1,3 @@
-console.log("work")
-
 
 $("#user-main-datatable").DataTable({
     processing: true,

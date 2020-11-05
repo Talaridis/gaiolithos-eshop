@@ -28,28 +28,15 @@
         <li class="side-nav-title side-nav-item">Navigation</li>
 
         <li class="side-nav-item">
-            <a href="javascript: void(0);" class="side-nav-link">
+            <a href="{{route('user.create')}}" class="side-nav-link">
                 <i class="uil-home-alt"></i>
-                <span class="badge badge-success float-right">4</span>
-                <span> Dashboards </span>
+                <span> User </span>
             </a>
-            <ul class="side-nav-second-level" aria-expanded="false">
-                <li>
-                    <a href="dashboard-analytics.html">Analytics</a>
-                </li>
-                <li>
-                    <a href="dashboard-crm.html">CRM</a>
-                </li>
-                <li>
-                    <a href="index.html">Ecommerce</a>
-                </li>
-                <li>
-                    <a href="dashboard-projects.html">Projects</a>
-                </li>
-            </ul>
+
         </li>
 
         <li class="side-nav-title side-nav-item">test</li>
+
         <li class="side-nav-item">
             <a href="javascript: void(0);" class="side-nav-link">
                 <i class="uil-store"></i>

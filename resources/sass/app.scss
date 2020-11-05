@@ -1,15 +1,20 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-// Variables
-@import 'variables';
+
 
 // Bootstrap
 //@import '~bootstrap/scss/bootstrap';
-
 
 //theme
 @import "../theme/scss/app-modern-dark";
 @import "../theme/scss/custom/plugins/icons/dripicons";
 @import "../theme/scss/custom/plugins/icons/materialdesignicons";
 @import "../theme/scss/custom/plugins/icons/unicons";
+
+// Variables
+
+@import 'variables';
+@import 'typography';
+@import 'custom';
+//@import 'spacing';

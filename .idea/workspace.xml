@@ -1,7 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa5a3e8d-059a-462a-94ea-73893ab73ff2" name="Default Changelist" comment="" />
+    <list default="true" id="fa5a3e8d-059a-462a-94ea-73893ab73ff2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/sass/_custom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gaiolithos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gaiolithos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/theme/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/theme/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/theme/scss/app-modern-dark.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/theme/scss/app-modern-dark.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/theme/scss/config/creative/_variables-dark.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/theme/scss/config/creative/_variables-dark.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/theme/scss/config/modern/_custom-variables-dark.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/theme/scss/config/modern/_custom-variables-dark.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/theme/scss/config/modern/_variables-dark.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/theme/scss/config/modern/_variables-dark.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/theme/scss/config/modern/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/theme/scss/config/modern/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/theme/scss/config/saas/_custom-variables-dark.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/theme/scss/config/saas/_custom-variables-dark.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/theme/scss/config/saas/_custom-variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/theme/scss/config/saas/_custom-variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partial/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partial/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +67,9 @@
         <option value="Blade" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -127,6 +179,7 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jpBCYC1YaBlmQ3y0duTjLZchvo" />
@@ -142,15 +195,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arxi-\OneDrive\Υπολογιστής\gaiolithos\resources\js\dashboard\user" />
+      <recent name="C:\Users\arxi-\OneDrive\Υπολογιστής\gaiolithos\resources\theme\js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\arxi-\OneDrive\Υπολογιστής\gaiolithos\resources\lang" />
       <recent name="C:\Users\arxi-\OneDrive\Υπολογιστής\gaiolithos\public" />
       <recent name="C:\Users\arxi-\OneDrive\Υπολογιστής\gaiolithos\resources\theme\js\vendor" />
       <recent name="C:\Users\arxi-\OneDrive\Υπολογιστής\gaiolithos\resources\js" />
       <recent name="C:\Users\arxi-\OneDrive\Υπολογιστής\gaiolithos\resources\theme\scss\custom" />
-      <recent name="C:\Users\arxi-\OneDrive\Υπολογιστής\gaiolithos\resources\theme\scss\custom\fonts" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\arxi-\OneDrive\Υπολογιστής\gaiolithos\resources\theme\js" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -175,46 +229,70 @@
       <workItem from="1604491026744" duration="8243000" />
       <workItem from="1604505020439" duration="990000" />
       <workItem from="1604506124352" duration="1793000" />
-      <workItem from="1604521922212" duration="4808000" />
+      <workItem from="1604521922212" duration="8790000" />
+      <workItem from="1604531246912" duration="9435000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="726" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604504809355">
+    <state x="726" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604540215003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="726" y="322" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604504809355" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604512237552">
+    <state x="726" y="322" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604540215003" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604534645819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604512237552" />
-    <state width="1921" height="305" key="GridCell.Tab.0.bottom" timestamp="1604525533712">
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604534645819" />
+    <state width="1921" height="305" key="GridCell.Tab.0.bottom" timestamp="1604531002706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="305" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604525533712" />
-    <state width="1921" height="305" key="GridCell.Tab.0.center" timestamp="1604525533712">
+    <state width="1921" height="305" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604531002706" />
+    <state width="1921" height="305" key="GridCell.Tab.0.center" timestamp="1604531002706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="305" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604525533712" />
-    <state width="1921" height="305" key="GridCell.Tab.0.left" timestamp="1604525533711">
+    <state width="1921" height="305" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604531002706" />
+    <state width="1921" height="305" key="GridCell.Tab.0.left" timestamp="1604531002706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="305" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604525533711" />
-    <state width="1921" height="305" key="GridCell.Tab.0.right" timestamp="1604525533712">
+    <state width="1921" height="305" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604531002706" />
+    <state width="1921" height="305" key="GridCell.Tab.0.right" timestamp="1604531002706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="305" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604525533712" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1604525506699">
+    <state width="1921" height="305" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604531002706" />
+    <state x="682" y="243" key="NewPhpClassDialog" timestamp="1604529110154">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604525506699" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604526901691">
+    <state x="682" y="243" key="NewPhpClassDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604529110154" />
+    <state x="539" y="64" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604533249861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604526901691" />
+    <state x="539" y="64" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604533249861" />
+    <state x="275" y="128" width="1410" height="659" key="find.popup" timestamp="1604537387893">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="275" y="128" width="1410" height="659" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604537387893" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1604537183697">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604537183697" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604538216539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604538216539" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -226,7 +304,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/layouts/partial/sidebar.blade.php</url>
-          <line>52</line>
+          <line>39</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

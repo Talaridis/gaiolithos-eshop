@@ -1,8 +1,15 @@
 // Variables
 
 //
-// Color system
+// custom color theme
 //
+$custom-blue-100:#313a55;  // sidebar , card
+$custom-blue-200:#293145;  //body content
+$custom-blue-300:#232a3b; //backgound-input ,searchbar ,dropdown
+
+
+$color-body:#e2e8f0; //backgound-input ,searchbar ,dropdown
+
 
 // stylelint-disable
 $gray-100: #404954;
@@ -123,8 +130,8 @@ $sizes: map-merge((
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   #343a40;
-$body-color:                $gray-500;
+$body-bg:                   $custom-blue-200;
+$body-color:                $color-body;
 
 // Links
 //
@@ -312,7 +319,7 @@ $input-padding-y-lg:                    $input-btn-padding-y-lg;
 $input-padding-x-lg:                    $input-btn-padding-x-lg;
 $input-line-height-lg:                  $input-btn-line-height-lg;
 
-$input-bg:                              $gray-100;
+$input-bg:                              $custom-blue-300;
 
 $input-color:                           $gray-800;
 $input-border-width:                    1px;
@@ -448,7 +455,7 @@ $form-validation-states: map-merge(
 // Dropdown menu container and contents.
 
 
-$dropdown-bg:                       $gray-300;
+$dropdown-bg:                       $custom-blue-200;
 $dropdown-padding-y:                .25rem;
 $dropdown-border-color:             lighten($gray-300, 3%);
 $dropdown-font-size:                $font-size-base;
@@ -504,7 +511,7 @@ $pagination-disabled-bg:            lighten($pagination-bg,5%);
 $pagination-disabled-border-color:  lighten($pagination-bg,5%);
 
 // Cards
-$card-bg:                           $gray-200;
+$card-bg:                           $custom-blue-100;
 $card-spacer-x:                     $spacer;
 $card-border-color:                 lighten($gray-300,3%);
 $card-cap-bg:                       $gray-300;

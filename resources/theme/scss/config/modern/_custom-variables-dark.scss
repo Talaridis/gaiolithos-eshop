@@ -9,7 +9,7 @@ $shadow-lg:                         0 0 45px 0 rgba(0, 0, 0, 0.12);
 //Background left-sidebar
 $bg-leftbar:                        linear-gradient(135deg, #6379c3 0%, #546ee5 60%);
 $bg-leftbar-light:                #ffffff;
-$bg-leftbar-dark:                 #313a46;
+$bg-leftbar-dark:                 $custom-blue-100;
 $bg-topnav:                       #37404a;
 
 // Deatched left sidenav
@@ -54,7 +54,7 @@ $sidebar-dark-menu-item-active:   #ffffff;
 
 // Rightbar
 $rightbar-width:                    280px;
-$rightbar-bg:                     #37404a;
+$rightbar-bg:                     $custom-blue-100;
 $rightbar-title-bg:               #3d73dd;
 $rightbar-title-color:            #ffffff;
 $rightbar-title-btn-bg:             lighten($rightbar-title-bg, 5%);
@@ -62,11 +62,11 @@ $rightbar-title-btn-color:        #ffffff;
 $rightbar-overlay-bg:             #000;
 
 // Topbar Background
-$bg-topbar:                       #3a444e;
+$bg-topbar:                       $custom-blue-200;
 $bg-topbar-dark:                  #3a444e;
 
 // Topbar Search
-$bg-topbar-search:                #464f5b;
+$bg-topbar-search:               $custom-blue-300;
 $bg-topbar-dark-search:           #464f5b;
 
 // Helpbox

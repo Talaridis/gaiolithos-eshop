@@ -2,6 +2,13 @@
 
 @section("content")
     <div class="container-fluid mt-4">
+
+        <form action="{{route('user.store')}}" method="POST" id="form-user-create" enctype="multipart/form-data"
+              autocomplete="off">
+            @csrf
+
+        </form>
+
         <div class="row">
             <div class="col-md-6 col-lg-4">
 
@@ -9,36 +16,83 @@
                 <div class="card d-block">
                     <div class="card-body">
 
-                        <div class="form-group">
-                            <label for="simpleinput">Ονομα </label>
-                            <input type="text" id="simpleinput" class="form-control">
-                        </div>
+                        <div class="form-group"> <!-- BEGIN: First-name -->
+                            <label for="user-firstName">'Ονομα</label>
+                            <input type="text"
+                                   id="user-firstName"
+                                   class="form-control @error('first_name') border-danger @enderror"
+                                   name="first_name"
+                                   placeholder="Εισάγετε ονομα.."
+                                   value="{{ old('first_name') != "" ? old('first_name') : "" }}"
+                                   form="form-user-create"
+                            >
+                            @error("first_name")
+                            <div class="invalid-feedback d-block">{{$message}}</div>
+                            @enderror
+                        </div> <!-- END: First-name -->
 
-                        <div class="form-group">
-                            <label for="simpleinput">Επίθετο </label>
-                            <input type="text" id="simpleinput" class="form-control">
-                        </div>
+                        <div class="form-group"> <!-- BEGIN: Last-name -->
+                            <label for="user-lastName">Επίθετο</label>
+                            <input type="text"
+                                   id="user-lastName"
+                                   class="form-control  @error('last_name') border-danger @enderror"
+                                   name="last_name"
+                                   placeholder="Εισάγετε επίθετο.."
+                                   value="{{ old('last_name') != "" ? old('last_name') : "" }}"
+                                   form="form-user-create"
+                            >
+                            @error("last_name")
+                            <div class="invalid-feedback d-block">{{$message}}</div>
+                            @enderror
+                        </div><!-- END: Last-name -->
 
-                        <div class="form-group">
+                        <div class="form-group"> <!-- BEGIN: E-mail -->
                             <label>Email</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">@</span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                                       aria-describedby="basic-addon1">
+                                <input type="text"
+                                       id="user-email"
+                                       class="form-control  @error('email') border-danger @enderror"
+                                       name="email"
+                                       placeholder="Εισάγετε email.."
+                                       value="{{ old('email') != "" ? old('email') : "" }}"
+                                       form="form-user-create"
+                                >
                             </div>
-                        </div>
+                            @error("email")
+                            <div class="invalid-feedback d-block d-block">{{$message}}</div>
+                            @enderror
+                        </div><!-- END: E-mail -->
 
-                        <div class="form-group">
-                            <label for="simpleinput">Τηλεφωνώ </label>
-                            <input type="text" id="simpleinput" class="form-control">
-                        </div>
+                        <div class="form-group"><!-- BEGIN: Phone -->
+                            <label for="user-phone">Τηλεφωνώ</label>
+                            <input type="text"
+                                   id="user-phone"
+                                   class="form-control  @error('phone') border-danger @enderror "
+                                   name="phone"
+                                   placeholder="Εισάγετε τηλεφωνώ.."
+                                   value="{{ old('phone') != "" ? old('phone') : "" }}"
+                                   form="form-user-create"
+                            >
+                            @error("phone")
+                            <div class="invalid-feedback d-block">{{$message}}</div>
+                            @enderror
+                        </div> <!-- END: Phone -->
 
-                        <div class="form-group">
+                        <div class="form-group"> <!-- BEGIN: Profile -->
                             <label for="example-textarea">Προφιλ</label>
-                            <textarea class="form-control" id="example-textarea" rows="5"></textarea>
-                        </div>
+                            <textarea
+                                id="example-textarea"
+                                class="form-control @error('profile') border-danger @enderror"
+                                name="profile"
+                                placeholder="Εισάγετε πληροφορίες"
+                                rows="5"></textarea>
+                            @error("profile")
+                            <div class="invalid-feedback d-block">{{$message}}</div>
+                            @enderror
+                        </div> <!-- END: Profile -->
 
                     </div> <!-- end card-body-->
                 </div> <!-- end card-->
@@ -48,43 +102,68 @@
                 <!-- Simple card -->
                 <div class="card d-block">
                     <div class="card-body">
-                        <div class="form-group">
-                            <label for="">Role</label>
-                            <select class="form-control select2" data-toggle="select2">
-                                <option>Select</option>
-                                <option value="CA">California</option>
-                                <option value="NV">Nevada</option>
-                                <option value="OR">Oregon</option>
-                                <option value="WA">Washington</option>
+
+                        <div class="form-group"> <!-- BEGIN: Role -->
+                            <label for="user-role">'Role</label>
+                            <select
+                                id="user-role"
+                                class="form-control  @error("role") border-danger  @enderror"
+                                name="role"
+                                form="form-user-create"
+                            >
+                                @foreach($roles as  $role)
+                                    <option
+                                        {{$role->id==2?"selected":""}} value="{{$role->id}}">{{$role->name}}</option>
+                                @endforeach
                             </select>
-                        </div>
+                            @error("role")
+                            <div class="invalid-feedback d-block">{{$message}}</div>
+                            @enderror
+                        </div> <!-- END: Role -->
 
-                        <div class="form-group">
-                            <label for="password">Κωδικός </label>
+                        <div class="form-group"> <!-- BEGIN: Password -->
+                            <label for="user-password">Κωδικός </label>
                             <div class="input-group input-group-merge">
-                                <input type="password" id="password" class="form-control"
-                                       placeholder="Enter your password">
+                                <input autocomplete="off"
+                                       type="password"
+                                       id="user-password"
+                                       class="form-control @error("password") border-danger @enderror"
+                                       name="password"
+                                       placeholder="Εισάγετε Κωδικό.."
+                                       form="form-user-create"
+                                />
                                 <div class="input-group-append" data-password="false">
                                     <div class="input-group-text">
                                         <span class="password-eye"></span>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            @error("password")
+                            <div class="invalid-feedback d-block">{{$message}}</div>
+                            @enderror
+                        </div> <!-- END: Password -->
 
-                        <div class="form-group">
-                            <label for="password">Επανάληψη κωδικού</label>
+                        <div class="form-group"> <!-- BEGIN: Password-confirmation -->
+                            <label for="password_confirmation">Επανάληψη κωδικού</label>
                             <div class="input-group input-group-merge">
-                                <input type="password" id="password" class="form-control"
-                                       placeholder="Enter your password">
+                                <input autocomplete="off"
+                                       type="password"
+                                       id="password_confirmation"
+                                       class="form-control @error("password_confirmation") border-danger @enderror"
+                                       name="password_confirmation"
+                                       placeholder="Εισάγετε επανάληψη κωδικού.."
+                                       form="form-user-create"
+                                />
                                 <div class="input-group-append" data-password="false">
                                     <div class="input-group-text">
                                         <span class="password-eye"></span>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
+                            @error("password_confirmation")
+                            <div class="invalid-feedback d-block">{{$message}}</div>
+                            @enderror
+                        </div> <!-- END: Password-confirmation -->
 
                     </div> <!-- end card-body-->
                 </div> <!-- end card-->
@@ -95,26 +174,30 @@
                 <div class="card d-block">
                     <div class="card-body">
 
-                        <button type="button" class="w-100 btn btn-primary">Save</button>
-
-                        <hr>
-
-                        <div class="form-row justify-content-center align-items-center ">
-                                <label class="font-16 mr-3">Status</label>
-                                <input type="checkbox" id="switch2"  data-switch="primary"/>
-                                <label for="switch2" data-on-label="On" data-off-label="Off"></label>
+                        <div class="d-flex">
+                            <button type="button" id="submit-user-create" class="w-100 btn btn-primary">Save</button>
+                            <i class="mdi-content-save"></i>
                         </div>
 
-                        <hr>
-                        <div class="form-group text-center">
+                        <div
+                            class="form-row justify-content-center align-items-center border-top border-bottom my-3 p-3">
+                            <!-- BEGIN: Status -->
+                            <label class="font-16 mr-3">Status</label>
+                            <input type="checkbox"
+                                   id="user-status"
+                                   data-switch="primary"
+                                   form="form-user-create"
+                            />
+                            <label for="user-status" data-on-label="On" data-off-label="Off"></label>
+                        </div> <!-- END: Status -->
+
+                        <div class="form-group text-center"> <!-- BEGIN: Avatar -->
                             <div class="d-inline-block position-relative">
-                                <img  height="150" src="https://via.placeholder.com/200" alt="image" class="img-fluid rounded">
+                                <img height="150" src="https://via.placeholder.com/200" alt="image"
+                                     class="img-fluid rounded">
                                 <i class="dripicons-pencil position-absolute edit-avatar"></i>
                             </div>
-
-
-                        </div>
-
+                        </div> <!-- END: Avatar -->
 
                     </div> <!-- end card-body-->
                 </div> <!-- end card-->
@@ -123,3 +206,9 @@
     </div>
 
 @endsection
+
+@section("script")
+
+    <script src="{{mix("js/dashboard/user/user.js")}}"></script>
+@endsection
+

@@ -36,7 +36,7 @@ class UserFactory extends Factory
             'name' => $firstName."-".$lastName,
             'email' => $firstName.".".$lastName."@example.com",
             'phone' => 69 . $this->faker->numberBetween(3, 9) . $this->faker->randomNumber(7, false),
-            'description' => "Description of User " . $counter ++ ,
+            'profile' => "Description of User " . $counter ++ ,
             'avatar' => "/images/avatar-placeholder.png",
             "slug" => Str::slug($firstName."-".$lastName, '-'),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password

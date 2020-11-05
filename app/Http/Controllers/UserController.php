@@ -6,6 +6,7 @@ use App\Http\Requests\UserCreateRequest;
 use App\Http\Requests\UserRequestCreate;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Spatie\Permission\Models\Role;
 use Yajra\DataTables\DataTables;
@@ -44,7 +45,8 @@ class UserController extends Controller {
             "first_name" => $request->first_name,
             "last_name" => $request->last_name,
             "email"=>$request->email,
-            "password"=>$request->password,
+            "profile"=>$request->profile,
+            "password"=>Hash::make($request->password),
             "phone"=>$request->phone,
             "description"=>$request->description,
             "slug"=>Str::slug($request->first_name.$request->last_name,"-"),

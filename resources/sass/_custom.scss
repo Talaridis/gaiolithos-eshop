@@ -1,17 +1,16 @@
 .edit-avatar{
-    background-color: red;
     padding: 5px;
     border-radius: 100%;
     padding: 10px 14px;
     right: -17px;
     top: -3px;
-    background-color: #a5a5a5;;
+    background-color: #a5a5a5;
     cursor: pointer;
 
+    &:hover{
+        border:solid 2px #232a3b;
+        transition: all 0.2s ease-in-out;
+    }
+
 }
 
-.edit-avatar:hover{
-    border:solid 2px #232a3b;
-    transition: all 0.2s ease-in-out;
-
-}

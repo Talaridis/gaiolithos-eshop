@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('email',50)->unique();
             $table->text('avatar')->nullable(); //change this
             $table->bigInteger('phone')->unique();
-            $table->text("description")->nullable();
+            $table->text("profile")->nullable();
             $table->string("slug",30);
             $table->boolean("status")->default(0);
             $table->timestamp('email_verified_at')->nullable();

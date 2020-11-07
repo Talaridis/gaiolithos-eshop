@@ -16,24 +16,9 @@ class UserController extends Controller {
     public function index()
     {
 
-
         return view("dashboard.user.user-main");
-
-
-
     }
 
-    public function initDatatableUser()
-    {
-        return Datatables::of(User::query())
-            ->editColumn('created_at', function ($data){
-                return $data->created_at->diffForHumans();
-            })
-            ->editColumn('updated_at', function ($data){
-                return $data->updated_at->diffForHumans();
-            })
-            ->make(true);
-    }
 
     public function create()
     {
@@ -42,8 +27,6 @@ class UserController extends Controller {
         ]);
     }
 
-
-
     public function store(UserCreateRequest $request)
     {
 
@@ -51,20 +34,27 @@ class UserController extends Controller {
             "name" => $request->first_name . "-" . $request->last_name,
             "first_name" => $request->first_name,
             "last_name" => $request->last_name,
-            "email"=>$request->email,
-            "profile"=>$request->profile,
-            "password"=>Hash::make($request->password),
-            "phone"=>$request->phone,
-            "description"=>$request->description,
-            "slug"=>Str::slug($request->first_name.$request->last_name,"-"),
-            "status"=>$request->status?1:0,
-            "avatar"=>"replaceMe"
-
+            "email" => $request->email,
+            "profile" => $request->profile,
+            "password" => Hash::make($request->password),
+            "phone" => $request->phone,
+            "description" => $request->description,
+            "slug" => Str::slug($request->first_name . $request->last_name, "-"),
+            "status" => $request->status ? 1 : 0,
+            "avatar" => "replaceMe"
         ]);
         $user->save();
 
         return redirect()->back();
+    }
 
+    public function show($user)
+    {
+
+        return view("dashboard.user.user", [
+            "roles" => Role::all(),
+            "user"=>User::findOrFail($user)
+        ]);
     }
 
 }

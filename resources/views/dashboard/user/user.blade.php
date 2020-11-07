@@ -1,12 +1,23 @@
 @extends("layouts.dashboard")
 
+@section("style")
+
+@endsection
+
 @section("content")
     <div class="container-fluid mt-4">
-
-        <form action="{{route('user.store')}}" method="POST" id="form-user-create" enctype="multipart/form-data"
-              autocomplete="off">
+        <form
+            @if(request()->route()->getName()=="user.store")
+            {{route('user.show')}}
+            method="PUT"
+            @else
+            {{route('user.create')}}
+            method="POST"
+            @endif
+            id="form-user-create"
+            enctype="multipart/form-data"
+            autocomplete="off">
             @csrf
-
         </form>
 
         <div class="row">
@@ -23,7 +34,7 @@
                                    class="form-control @error('first_name') border-danger @enderror"
                                    name="first_name"
                                    placeholder="Εισάγετε ονομα.."
-                                   value="{{ old('first_name') != "" ? old('first_name') : "" }}"
+                                   value="{{isset($user)?$user->first_name: (old('first_name') != "" ? old('first_name') : "" )}}"
                                    form="form-user-create"
                             >
                             @error("first_name")

@@ -2,22 +2,51 @@
 
 @section("content")
     <div class="container-fluid my-4 table-responsive">
-        <table id="user-main-datatable" class="table dt-responsive nowrap w-100">
+
+        <select id="activeFilter">
+            <option value="">Όλες οι Καταστάσεις</option>
+            <option value="1">Ενεργοί</option>
+            <option value="0">Μη Ενεργοί</option>
+        </select>
+
+        <x-user.bulkAction></x-user.bulkAction>
+        <table id="user-main-datatable" class="table dt-responsive nowrap w-100 tables-hover-effect">
             <thead>
             <tr>
+                <th>
+                    <div class="pretty p-icon p-jelly ">
+                        <input type="checkbox" class="js-checkbox-all" />
+                        <div class="state p-info-o">
+                            <i class="icon mdi mdi-check-all"></i>
+                            <label></label>
+                        </div>
+                    </div>
+                </th>
                 <th>Όνομα</th>
                 <th>Επώνυμο</th>
                 <th>E-mail</th>
                 <th>Τηλέφωνο</th>
+                <th>Ρόλος</th>
                 <th>Κατάσταση</th>
-                <th>Ενημερώθηκε</th>
                 <th>Δημιουργήθηκε</th>
+                <th>Action</th>
             </tr>
             </thead>
+            <tfoot>
+            <tr>
+                <th>Όνομα</th>
+                <th>Όνομα</th>
+                <th>Επώνυμο</th>
+                <th>E-mail</th>
+                <th>Τηλέφωνο</th>
+                <th>Ρόλος</th>
+                <th>Κατάσταση</th>
+                <th>Δημιουργήθηκε</th>
+                <th>Action</th>
+            </tr>
+            </tfoot>
         </table>
     </div>
-
-
 @endsection
 
 

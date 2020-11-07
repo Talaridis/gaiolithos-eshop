@@ -4,15 +4,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 
 //sweetalert2 && toast
-import swal from 'sweetalert2';
-window.swal = swal;
-const toast = swal.mixin({
-    toast: true,
-    position: 'top-end',
-    showConfirmButton: false,
-    timer: 3000
-});
-window.toast = toast;
+import Swal from 'sweetalert2';
+window.Swal = Swal;
+
 
 // DataTables
 require('datatables.net-bs4');
